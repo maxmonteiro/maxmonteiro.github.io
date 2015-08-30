@@ -1,15 +1,12 @@
 ---
 layout: page
-title: About
+title: About (sim, sobre eu)
 permalink: /about/
 ---
 
-Some information about you!
+Desenvoldedor web, UX design com foco em acessibilidade, maker e muito mais.
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+### Entre em contato, mande um oi (ou café :D).
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[contato@ruanaragao.com](mailto:contato@ruanaragao.com)
