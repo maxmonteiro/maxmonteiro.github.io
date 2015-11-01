@@ -25,9 +25,9 @@ footer-links:
   instagram: zxesportes
   linkedin: ruanaragao
   pinterest: ruanaragao
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  rss: /feed # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: RuanAragao
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/2913819/ruan-aragão # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: +ruanaragao # anything in your profile username that comes after plus.google.com/
 

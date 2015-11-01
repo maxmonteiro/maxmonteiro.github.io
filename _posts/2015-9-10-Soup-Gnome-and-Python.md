@@ -19,29 +19,28 @@ Ainda pode [baixar o código do BeautifulSoup 4](http://www.crummy.com/software/
 
 ## O código ##
 Primeiramente vamos importar o **urllib.request** e o **BeautifulSoup**
-```python
+```
 import urllib.request
 from bs4 import BeautifulSoup
 ```
 
 Ok, agora para podermos fazer uma requisição na pagina do google precisamos adicionar um _User-Agent_ no nosso header.
-```python
+```
 opener = urllib.request.build_opener()
 opener.addheaders = [('User-agent', 'Mozilla/5.0')]
 ```
 
 Vamos criar uma função responsavel por buscar e mostrar o resultado,
-```python
+{% highlight py %}
 def search(query):
     result = opener.open('http://google.com/search?q=' + query).read()
     soup = BeautifulSoup(result, 'lxml')
     text = soup.find_all(class_='st')[0].text
     print(text)
-```
+{% endhighlight %}
 
 Para finalizar vamos pegar a frase e chamar a função de busca.
-```python
+```
 qry = input('Busca: ')
 search(qry)
 ```
-
