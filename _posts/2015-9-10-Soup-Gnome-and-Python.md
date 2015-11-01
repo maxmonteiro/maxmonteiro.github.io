@@ -12,7 +12,7 @@ Se você utiliza versões recentes do Debian ou Ubuntu Linux (Linux? Haha... Tá
 Ou você pode instalar com `easy_install` ou `pip` como no meu caso (Fedora 22).
 `$ pip install beautifulsoup4`
 
-Ainda pode [baixar o código do BeautifulSoup 4](http://www.crummy.com/software/BeautifulSoup/download/4.x/) e intalar o `setup.py`
+Ainda pode [baixar o código do BeautifulSoup 4](http://www.crummy.com/software/BeautifulSoup/download/4.x/) e intalar o "setup.py"
 `$ python setup.py install`
 
 > Caso esteja com problemas na instalação, tente utilizando `$ python3 setup.py install` para o Python 3.
