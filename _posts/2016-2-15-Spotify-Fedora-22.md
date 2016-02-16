@@ -12,10 +12,14 @@ Sistema atualizado e os repositórios [RPM Fusion](http://rpmfusion.org/) habili
 ## O que fazer? ##
 
 Abra o terminal e logue como root (ou utilize nosso amigo **sudo**) e adicione o repositório executando a seguinte linha:
-`dnf config-manager --add-repo=http://negativo17.org/repos/fedora-spotify.repo`
+{% highlight sh %}
+dnf config-manager --add-repo=http://negativo17.org/repos/fedora-spotify.repo
+{% endhighlight %}
 
 E agora para instalar (tambem como root):
-`dnf install spotify-client`
+{% highlight sh %}
+dnf install spotify-client
+{% endhighlight %}
 
 ## O que mais? ##
 
