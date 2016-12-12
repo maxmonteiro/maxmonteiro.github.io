@@ -4,7 +4,7 @@ title: About (sim, sobre eu)
 permalink: /about/
 ---
 
-Desenvolvedor web, UX designer, maker e muito mais.
+Desenvolvedor web full stack, UX designer, gamer e muito mais.
 
 
 ### Entre em contato, mande um oi (ou café :D).
