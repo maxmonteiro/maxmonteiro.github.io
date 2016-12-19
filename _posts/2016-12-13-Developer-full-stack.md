@@ -22,7 +22,7 @@ Assim, vamos caracterizar algumas das tecnologias utilizadas por um desenvolvedo
 ## 2. Controle de versão e virtualização ##
 
 Hoje, é inaceitável não usar controle de versão do código, mesmo sendo um lobo solitário. Como exemplo temos: GIT, Mercurial e SVN.
-Com a virtualização podemos criar facilmente ambientes de desenvolvimento, customizados e independentes, com Vagrant e VirtuaBox. Desapegue do LAMP/XAMPP e suas variantes.
+Com a virtualização podemos criar facilmente ambientes de desenvolvimento, customizados e independentes, com Vagrant e VirtualBox. Desapegue do LAMP/XAMPP e suas variantes.
 
 ## 3. Tecnologias back-end ##
 
