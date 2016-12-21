@@ -241,114 +241,109 @@ nav {
 }
 
 /******************/
-/* MENU HAMBUNGER */
+/* MENU HAMBURGER */
 /******************/
 
 //
 // common css
 //
 
-.c-hamburger {
+.nav-toggle {
   display: block;
+  padding: 10px 10px 15px 10px;
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+}
+.hamburger {
+  width: 1.08em;
   position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 96px;
-  height: 96px;
-  font-size: 0;
-  text-indent: -9999px;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
+  display: inline-block;
+  height: 0.6em;
+  font-size: 1.2em;
+  background: #fff;
 }
-
-.c-hamburger:focus {
-  outline: none;
-}
-
-.c-hamburger span {
-  display: block;
-  position: absolute;
-  top: 44px;
-  left: 18px;
-  right: 18px;
-  height: 8px;
-  background: white;
-}
-
-.c-hamburger span::before,
-.c-hamburger span::after {
-  position: absolute;
-  display: block;
-  left: 0;
+.hamburger span {
   width: 100%;
-  height: 8px;
-  background-color: #fff;
-  content: "";
+  background: #000;
+  display: block;
+  position: absolute;
+  left: 0px;
+  height: 0.185em;
+  border-radius: 1.2px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+.hamburger span:nth-child(2) {
+  top: 0.36em;
+}
+.hamburger span:nth-child(3) {
+  top: 0.73em;
+}
+.sidebar {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #2ecc71;
+  top: -23px;
+  left: 0px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -ms-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -o-transition: 0.2s all;
+}
+#navicon {
+  display: none;
+}
+#navicon:checked ~ .sidebar {
+  visibility: visible;
+  opacity: 1;
+}
+#navicon:checked ~ .nav-toggle > .hamburger span {
+  top: 0.36em;
+}
+#navicon:checked ~ .nav-toggle > .hamburger span:nth-child(1) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+#navicon:checked ~ .nav-toggle > .hamburger span:nth-child(2) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+#navicon:checked ~ .nav-toggle > .hamburger span:nth-child(3) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
 }
 
-.c-hamburger span::before {
-  top: -20px;
-}
-
-.c-hamburger span::after {
-  bottom: -20px;
-}
 
 //
 // Animate to X
 //
 
-.c-hamburger--htx {
-  background-color: #2980b9;
-}
-
-.c-hamburger--htx span {
-  transition: background 0s 0.3s;
-}
-
-.c-hamburger--htx span::before,
-.c-hamburger--htx span::after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
-}
-
-.c-hamburger--htx span::before {
-  transition-property: top, transform;
-}
-
-.c-hamburger--htx span::after {
-  transition-property: bottom, transform;
-}
-
-/* active state, i.e. menu open */
-.c-hamburger--htx.is-active {
-  background-color: #cb0032;
-}
-
-.c-hamburger--htx.is-active span {
-  background: none;
-}
-
-.c-hamburger--htx.is-active span::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-
-.c-hamburger--htx.is-active span::after {
-  bottom: 0;
-  transform: rotate(-45deg);
-}
-
-.c-hamburger--htx.is-active span::before,
-.c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.3s;
-}
-
+/**********************/
+/* END MENU HAMBURGER */
+/**********************/
 
 //
 // .main

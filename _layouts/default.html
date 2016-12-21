@@ -30,9 +30,15 @@
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
-            <button class="c-hamburger c-hamburger--htx">
-              <span>toggle menu</span>
-            </button>
+            <input type="checkbox" id="navicon">
+            <div class="nav-toggle">
+              <label for="navicon" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+		<nav class="sidebar" role="complementary"></nav>
           </nav>
         </header>
       </div>
